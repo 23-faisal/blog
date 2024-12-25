@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import Image from "../Image/Image";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,26 +38,26 @@ const Navbar = () => {
            isOpen ? "-right-0" : "-right-[100%]"
          }  transition-all duration-500 ease-in-out`}
         >
-          <a href="">Home</a>
-          <a href="">Most Popular</a>
-          <a href="">About</a>
-          <a href="">
+          <Link to="/">Home</Link>
+          <Link to="/">Most Popular</Link>
+          <Link to="/">About</Link>
+          <Link to="/">
             <button className="py-2 px-4 rounded-xl bg-blue-800 text-white">
               Login
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
-        <a href="">Home</a>
-        <a href="">Most Popular</a>
-        <a href="">About</a>
-        <a href="">
+        <Link to="/">Home</Link>
+        <Link to="/">Most Popular</Link>
+        <Link to="/">About</Link>
+        <Link to="/login">
           <button className="py-2 px-4 rounded-xl bg-blue-800 text-white">
             Login
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
