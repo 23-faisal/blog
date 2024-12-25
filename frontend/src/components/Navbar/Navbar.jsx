@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { IKImage } from "imagekitio-react";
+import Image from "../Image/Image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +9,7 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between z-50">
       {/* Logo */}
       <div className="flex items-center space-x-2 text-2xl font-bold text-gray-800">
-        <img src="./logo.png" className="w-8 h-8" alt="blog logo" />
+        <Image src="/logo.png" width={32} height={32} alt="Blog logo" />
         <span>.blog</span>
       </div>
       {/* Mobile Menu */}
@@ -32,7 +34,7 @@ const Navbar = () => {
         {/* Mobile Link List */}
         <div
           className={`  w-full h-screen flex flex-col items-center gap-8 font-lg justify-center absolute
-         top-16   bg-red-700   ${
+         top-16      ${
            isOpen ? "-right-0" : "-right-[100%]"
          }  transition-all duration-500 ease-in-out`}
         >
