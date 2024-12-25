@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { IKImage } from "imagekitio-react";
 import Image from "../Image/Image";
 
 const Navbar = () => {
@@ -12,8 +11,8 @@ const Navbar = () => {
         <Image src="/logo.png" width={32} height={32} alt="Blog logo" />
         <span>.blog</span>
       </div>
-      {/* Mobile Menu */}
 
+      {/* Mobile Menu */}
       <div className="md:hidden">
         {isOpen ? (
           <>

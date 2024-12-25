@@ -10,7 +10,7 @@ const App = () => {
       {/* Introduction */}
 
       {/* Featured Post */}
-      
+
       {/* Post List */}
     </div>
   );
