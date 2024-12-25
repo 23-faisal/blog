@@ -2,12 +2,7 @@ import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import Image from "../Image/Image";
 import { Link } from "react-router-dom";
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
